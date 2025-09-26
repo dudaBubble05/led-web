@@ -14,6 +14,7 @@ clientWeb.connect({
     }
 })
 
+
 function ligarAzul(){
     document.getElementById("azul").classList.add("amar");
 
