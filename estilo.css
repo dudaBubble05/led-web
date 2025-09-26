@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Henny+Penny&display=swap');
+
+body {
+  background: #d1f6ff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+h1 {
+  font-family: "Henny Penny", system-ui;
+  font-weight: 400;
+  font-size: 300%;
+  font-style: normal;
+  color: #000;
+}
+
+
+.container {
+  text-align: center;
+}
+
+.led {
+  width: 150px;
+  height: 150px;
+  margin: 20px auto;
+  border-radius: 50%;
+  background: #333;
+  box-shadow: 0 0 20px #000 inset;
+  transition: all 0.4s ease;
+}
+
+.led.aceso {
+  background: #00ddff;
+  box-shadow: 0 0 40px 20px #14a7b2;
+}
+
+button {
+  padding: 12px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  background: #444;
+  color: #fff;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background: #666;
+}

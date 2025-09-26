@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LED Interativo</title>
+  <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+  <div class="container">
+    <h1>LED Interativo</h1>
+    <div class="led apagado" id="led"></div>
+    <button id="botao">Acender / Apagar</button>
+  </div>
+
+  <script>
+    const led = document.getElementById("led");
+    const botao = document.getElementById("botao");
+
+    botao.addEventListener("click", () => {
+      led.classList.toggle("aceso");
+    });
+  </script>
+</body>
+</html>
