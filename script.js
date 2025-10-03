@@ -29,6 +29,6 @@ function desligar(){
     document.getElementById("azul").classList.remove("amar");
 
     let msg = new Paho.MQTT.Message(``);
-    msg.destinationName = "MEPF2007/led/on"
+    msg.destinationName = "MEPF2007/led/off"
     clientWeb.send(msg)
 }
